@@ -1,0 +1,42 @@
+{
+  "name": "vue3-ssr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "client:server": "webpack serve --config ./build/webpack.client.js",
+    "client:dev": "webpack --config ./build/webpack.client.js",
+    "server:dev": "webpack --config ./build/webpack.server.js",
+    "build:dev": "yarn client:dev && yarn server:dev",
+    "server:start": "nodemon ./src/server/app.js"
+  },
+  "keywords": [],
+  "author": "zhourengui <729049182@qq.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@vue/server-renderer": "^3.0.11",
+    "vue": "^3.0.11",
+    "vue-router": "^4.0.6",
+    "vuex": "^4.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.0",
+    "@babel/plugin-transform-runtime": "^7.13.15",
+    "@babel/preset-env": "^7.14.0",
+    "@koa/router": "^10.0.0",
+    "@vue/compiler-sfc": "^3.0.11",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.2.4",
+    "html-webpack-plugin": "^5.3.1",
+    "ignore-loader": "^0.1.2",
+    "koa": "^2.13.1",
+    "mini-css-extract-plugin": "^1.6.0",
+    "nodemon": "^2.0.7",
+    "vue-loader": "^16.2.0",
+    "webpack": "^5.36.2",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.7.3",
+    "webpack-node-externals": "^3.0.0"
+  }
+}
